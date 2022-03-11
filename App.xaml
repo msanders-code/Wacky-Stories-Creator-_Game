@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="Wacky_Stories_Creator.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Wacky_Stories_Creator">
+
+</Application>
