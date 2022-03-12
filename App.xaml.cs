@@ -18,6 +18,26 @@ using Windows.UI.Xaml.Navigation;
 namespace Wacky_Stories_Creator
 {
     /// <summary>
+    /// Provides data storage and methods for dealing with user text input.
+    /// </summary>
+    public class UserInput
+    {
+        // Lists to hold the user input data
+        private List<string> adjectives = new List<string>();
+        private List<string> adverbs = new List<string>();
+        private List<string> nouns = new List<string>();
+        private List<string> verbs = new List<string>();
+        private List<string> exclamations = new List<string>();
+        private List<string> places = new List<string>();
+        private List<string> numbers = new List<string>();
+        private List<string> colors = new List<string>();
+        private List<string> animals = new List<string>();
+        private List<string> parts_of_the_body = new List<string>();
+
+        
+    }
+
+    /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
     sealed partial class App : Application
