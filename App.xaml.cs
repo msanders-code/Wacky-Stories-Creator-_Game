@@ -26,15 +26,9 @@ namespace Wacky_Stories_Creator
         protected List<string> user_input = new List<string>();
 
         // Get method to retrieve data from the user_input queue
-        public string Get_user_input()
+        public string Get_user_input(int index)
         {
-            // Saves the word at index 0 from the user_input queue
-            string input = user_input[0];
-
-            // Removes the word at index 0 in the user_input queue
-            user_input.RemoveAt(0);
-
-            return input;
+            return user_input[index];
         }
 
         // Set method to add a word to the user_input queue
@@ -42,6 +36,12 @@ namespace Wacky_Stories_Creator
         {
             // Add a new word to the user_input queue
             user_input.Add(new_word);
+        }
+
+        // Clears the user_input queue of data
+        public void Clear_user_input()
+        {
+            user_input.Clear();
         }
     }
 

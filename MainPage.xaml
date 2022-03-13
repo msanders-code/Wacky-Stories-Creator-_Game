@@ -8,7 +8,31 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
+    <Grid HorizontalAlignment="Left" Width="1440">
+        <TextBlock 
+            HorizontalAlignment="Center" VerticalAlignment="Top" 
+            FontSize="150" FontWeight="Bold" FontFamily="Georgia">
+            - Menu -
+        </TextBlock>
+        <DropDownButton 
+            x:Name="select_theme" HorizontalAlignment="Center" 
+            Margin="0,0,0,275" Height="60" Width="526"
+            Content="Select A Theme" FontSize="35"
+            FontWeight="Bold" FontFamily="Georgia" 
+            Background="Cyan" Click="SelectTheme" 
+            ClickMode="Hover"/>
+        <Button 
+            x:Name="create_stories_button" HorizontalAlignment="Center" 
+            Margin="0,275,0,200" Height="60"  Width="526" 
+            Content="Create Stories" FontSize="35" 
+            FontWeight="Bold" FontFamily="Georgia"
+            Background="LightSeaGreen" Click="CreateStories" 
+            ClickMode="Press"/>
+        <Button 
+            x:Name="quit_button" HorizontalAlignment="Center" 
+            Margin="0, 420,0,0" Height="60"  Width="526" 
+            Content="Quit" FontSize="35" FontWeight="Bold" 
+            FontFamily="Georgia" Background="PaleVioletRed"
+            Click="QuitApp" ClickMode="Press"/>
     </Grid>
 </Page>
