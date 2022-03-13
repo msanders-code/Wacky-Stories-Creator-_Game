@@ -22,19 +22,27 @@ namespace Wacky_Stories_Creator
     /// </summary>
     public class UserInput
     {
-        // Lists to hold the user input data
-        private List<string> adjectives = new List<string>();
-        private List<string> adverbs = new List<string>();
-        private List<string> nouns = new List<string>();
-        private List<string> verbs = new List<string>();
-        private List<string> exclamations = new List<string>();
-        private List<string> places = new List<string>();
-        private List<string> numbers = new List<string>();
-        private List<string> colors = new List<string>();
-        private List<string> animals = new List<string>();
-        private List<string> parts_of_the_body = new List<string>();
+        // Queue to hold user input data
+        protected List<string> user_input = new List<string>();
 
-        
+        // Get method to retrieve data from the user_input queue
+        public string Get_user_input()
+        {
+            // Saves the word at index 0 from the user_input queue
+            string input = user_input[0];
+
+            // Removes the word at index 0 in the user_input queue
+            user_input.RemoveAt(0);
+
+            return input;
+        }
+
+        // Set method to add a word to the user_input queue
+        public void Set_user_input(string new_word)
+        {
+            // Add a new word to the user_input queue
+            user_input.Add(new_word);
+        }
     }
 
     /// <summary>
