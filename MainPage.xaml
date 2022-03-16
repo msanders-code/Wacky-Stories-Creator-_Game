@@ -6,33 +6,33 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Black">
 
-    <Grid HorizontalAlignment="Left" Width="960">
+ 
+        <Grid HorizontalAlignment="Center" Width="960">
         <TextBlock 
             HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="150" FontWeight="Bold" FontFamily="Georgia">
             - Menu -
         </TextBlock>
-        <DropDownButton 
-            x:Name="select_theme" HorizontalAlignment="Center" 
-            Margin="0,0,0,275" Height="60" Width="526"
-            Content="Select A Theme" FontSize="35"
-            FontWeight="Bold" FontFamily="Georgia" 
-            Background="Cyan" Click="SelectTheme" 
-            ClickMode="Hover"/>
+        <ComboBox 
+            x:Name="select_theme" PlaceholderText="Select A Theme" 
+            Width="526" Height="60" FontFamily="Georgia" 
+            FontSize="35" FontWeight="Bold" Background="Firebrick"
+            HorizontalAlignment="Center" Margin="0,300,0,0"
+            SelectionChanged="SelectTheme"/>
         <Button 
             x:Name="create_stories_button" HorizontalAlignment="Center" 
-            Margin="0,275,0,200" Height="60"  Width="526" 
+            Margin="0,200,0,0" Height="60"  Width="526" 
             Content="Create Stories" FontSize="35" 
             FontWeight="Bold" FontFamily="Georgia"
-            Background="LightSeaGreen" Click="CreateStories" 
+            Background="DarkCyan" Click="CreateStories" 
             ClickMode="Press"/>
         <Button 
-            x:Name="quit_button" HorizontalAlignment="Center" 
-            Margin="0, 420,0,0" Height="60"  Width="526" 
-            Content="Quit" FontSize="35" FontWeight="Bold" 
-            FontFamily="Georgia" Background="PaleVioletRed"
-            Click="QuitApp" ClickMode="Press"/>
+            x:Name="replay_story" HorizontalAlignment="Center" 
+            Margin="0,700,0,0" Height="60"  Width="526" 
+            Content="Replay Stories" FontSize="35" FontWeight="Bold" 
+            FontFamily="Georgia" Background="Indigo"
+            Click="Replay" ClickMode="Press"/>
     </Grid>
 </Page>

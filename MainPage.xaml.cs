@@ -18,14 +18,16 @@ namespace Wacky_Stories_Creator
 {
     public sealed partial class MainPage : Page
     {
+        
         public MainPage()
         {
             this.InitializeComponent();
+            select_theme.Items.Add("Nursery Rhymes");
         }
 
         private void SelectTheme(object sender, RoutedEventArgs e)
         {
-            //TODO create drop down option list
+            
         }
 
         private void CreateStories(object sender, RoutedEventArgs e)
@@ -33,9 +35,9 @@ namespace Wacky_Stories_Creator
             //TODO create route to page to enter words in form fields
         }
 
-        private void QuitApp(object sender, RoutedEventArgs e)
+        private void Replay(object sender, RoutedEventArgs e)
         {
-            Window.Current.Close();
+            //TODO add replay previous stories function
         }
     }
 }
