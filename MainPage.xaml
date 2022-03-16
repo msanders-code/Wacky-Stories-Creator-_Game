@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid HorizontalAlignment="Left" Width="1440">
+    <Grid HorizontalAlignment="Left" Width="960">
         <TextBlock 
             HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="150" FontWeight="Bold" FontFamily="Georgia">

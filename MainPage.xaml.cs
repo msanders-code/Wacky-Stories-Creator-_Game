@@ -22,5 +22,20 @@ namespace Wacky_Stories_Creator
         {
             this.InitializeComponent();
         }
+
+        private void SelectTheme(object sender, RoutedEventArgs e)
+        {
+            //TODO create drop down option list
+        }
+
+        private void CreateStories(object sender, RoutedEventArgs e)
+        {
+            //TODO create route to page to enter words in form fields
+        }
+
+        private void QuitApp(object sender, RoutedEventArgs e)
+        {
+            Window.Current.Close();
+        }
     }
 }
